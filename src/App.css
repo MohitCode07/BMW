@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.App {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  margin-left: 100px;
+ 
+}
+
+.head1,
+.head2,
+.head3 {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 5px;
+  
+}
+
+.head1 {
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.head2 {
+  font-size: 50px;
+  font-family: "Libre Franklin";
+  font-weight: 300;
+  margin-right: 120px;
+  
+}
+
+.head3 {
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: 200;
+  margin-left: 10px;
+
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 20px;
+  margin-left: 60px;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 30px;
+  margin-left: 1px;
+  font-weight: 1000;
+  
+}
+.navbar nav ul li a {
+  color: white;
+  /* Sets the text color to white */
+  text-decoration: none;
+  /* Removes the underline from the anchor tags */
+  border-bottom: 2px solid transparent;
+  /* Add transparent border bottom */
+  transition: border-bottom 0.3s;
+  /* Add transition effect */
+ 
+}
+
+
+/* .content2{
+ 
+} */
+
+.navbar nav ul li a:hover {
+  border-bottom: 2px solid blue;
+  /* Change border bottom color on hover */
+}
+
+.icons {
+  display: flex;
+  gap: 36px;
+  /* Adjust the space between icons */
+  margin-left: 500px;
+  border-bottom: 2px solid transparent;
+
+}
+
+.icons>* {
+  /* Optional: Apply common styles to all icons */
+  font-size: 20px;
+  /* Adjust icon size */
+  color: rgb(255, 255, 255);
+  transition: color 0.3s;
+  transition: border-bottom 0.3s;
+  /* Set icon color */
+}
+
+.icons>*:hover {
+  /* Change icon color on hover */
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid blue;
+}
+
+
+/* ----------------------------- page2 cssś -------------------------------------- */
+.page2 {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+#background-video-page2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content2 {
+  position: absolute;
+
+  top: 50%;
+  left: 5%;
+  /* Adjust left as needed */
+  transform: translateY(-50%);
+  text-align: left;
+  z-index: 1;
+  color: white;
+  margin-top: 160px;
+}
+
+.content2-head1,
+.content2-head2,
+.content2-head3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.content2-head1 {
+  font-size: 20px;
+  margin-right: 1227px;
+  white-space: nowrap;
+  font-family: "roboto";
+  font-weight: 500;
+
+    
+
+}
+
+.content2-head2 {
+  font-size: 60px;
+  margin-right: 1100px;
+  white-space: nowrap;
+  font-family: "Libre Franklin";
+   font-weight: 300;
+}
+
+.content2-head3 {
+  font-size: 30px;
+  margin-right: 1020px;
+  font-family: "Poppins";
+    font-weight: 200;
+}
+
+
+
+.content2-head3 {
+  font-size: 30px;
+  white-space: nowrap;
+  font-weight: 200;
+  /* Prevent line breaks */
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  /* Align buttons vertically */
+  align-items: center;
+  /* Center buttons horizontally */
+  margin-top: 20px;
+}
+
+.configure-button,
+.know-more-button {
+  background-color: #1C68D4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  /* Adjust margin-top as needed */
+}
+
+.configure-button:hover,
+.know-more-button:hover {
+  background-color: #1652A2;
+  /* Light blue color on hover */
+}
+
+.know-more-button {
+  margin-top: 10px;
+  /* Adjust margin-top as needed */
+}
+
+.buttons-container {
+  position: absolute;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row; /* Align buttons vertically */
+  align-items: center; /* Center buttons horizontally */
+  
+}
+
+.configure-button,
+.know-more-button {
+  background-color: #1C68D4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.configure-button:hover,
+.know-more-button:hover {
+  background-color: #1652A2; /* Light blue color on hover */
+}
+.buttons-container {
+  position: absolute;
+  bottom: 20px;
+  /* Adjust the distance from the bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  /* Center buttons horizontally */
+  align-items: center;
+  /* Center buttons vertically */
+}
+
+.configure-button,
+.know-more-button {
+  background-color: #1C68D4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 10px;
+  /* Add margin between buttons */
+}
+
+.configure-button:hover,
+.know-more-button:hover {
+  background-color: #1652A2;
+  /* Light blue color on hover */
+}
+
+.buttons-container {
+  position: absolute;
+  bottom: 40px;
+  /* Adjust the distance from the bottom as needed */
+  left: 246px;
+  /* Adjust the distance from the left side of the page */
+  display: flex;
+  flex-direction: row;
+  /* Align buttons horizontally */
+}
+
+.configure-button,
+.know-more-button {
+  background-color: #1C68D4;
+  color: white;
+  border: none;
+  border-radius: 0;
+  /* Remove border-radius to keep buttons rectangular */
+  padding: 15px 25px;
+  /* Increase padding for larger buttons */
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 20px;
+  /* Add margin between buttons */
+}
+
+.configure-button:hover,
+.know-more-button:hover {
+  background-color: #1652A2;
+  /* Light blue color on hover */
+}
+
+/* ....................................page3 css........................................... */
+
+
+.page3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.shopping-tools {
+  text-align: center;
+  margin-bottom: 10px;
+
+
+}
+
+.shopping-tools h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.shopping-tools h1 {
+  margin: 10px 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.car-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.car-icons svg {
+  font-size: 60px;
+  /* Increase icon size */
+  color: black;
+  /* Change icon color to black */
+  margin: 0 200px ;
+  /* Add margin for spacing */
+  margin-top: 30px;
+}
+
+.page3-buttons button {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.page3-buttons button:hover {
+  border-width: 4px;
+  /* Increase border width on hover */
+  color: #000000;
+  /* Change text color on hover */
+}
+
+.icon-container button {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: border-width 0.3s, color 0.3s;
+  /* Add transition effect */
+}
+
+.icon-container button:hover {
+  border-width: 4px;
+  color: #000000;
+}
+
+
+/* ---------------------Page 4 ----------------------------------------------------- */
+
+
+.page4-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 40px;
+  /* Adjust margin from top */
+  padding-left: 60px;
+}
+
+.page4-image {
+  position: relative;
+  width: 50%;
+  /* Image occupies 50% of the container */
+  margin-left: 5px;
+  /* Adjust margin from left */
+}
+
+.page4-img {
+  width: 100%;
+  height: 100%;
+}
+
+.page4-button {
+  position: absolute;
+  top: 94%;
+  /* Center the button vertically */
+  right: 30;
+  /* Align the button to the right */
+  transform: translateY(-50%);
+  /* Center the button vertically */
+  margin-left: 90px;
+  /* Adjust margin from right */
+  padding: 12px 25px;
+  /* Adjust button padding */
+  white-space: nowrap;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 0;
+  
+  
+}
+
+/* ----------------------------footer-------------------------------- */
+
